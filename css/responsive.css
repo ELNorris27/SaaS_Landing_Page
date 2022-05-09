@@ -1,0 +1,489 @@
+@media screen and (max-width: 768px) {
+	[aria-controls="navbarDropdown"] {
+		display: block;
+	}
+	
+	[aria-expanded="false"] ~ ul {
+		display: none;
+	}
+	
+	[aria-expanded="true"] ~ ul {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: var(--size-40);
+		background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.9) 40%);
+		width: 100%;
+		text-align: right;
+		box-shadow: 0rem 0rem 1.5rem rgba(52, 49, 75, 0.2); 
+	}
+	
+	.navbar-toggler {
+		right: var(--size-14);
+	}
+	
+	.navbar-nav {
+		padding: var(--size-10) 1.5rem;
+	}
+	
+	[aria-expanded="true"] ~ ul li a {
+		color: var(--font-color-dark);
+	}
+	
+	.navbar-brand  {
+		height: var(--size-28);
+		width: var(--size-100);
+	}
+	
+	.nav-link-button {
+		margin-top: var(--size-8);
+	}
+	
+	.bg-header::before {
+		height: 85%;
+	}
+	
+	.logos-wrapper {
+		margin-top: var(--size-40);
+	}
+	
+	.header-container {
+		width: 20.625rem;
+		margin: 0 auto;
+	}
+	
+}
+
+
+
+@media screen and (min-width: 600px) {
+	
+	.benefits-card-container {
+		max-width: 37.5rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	
+	.benefits-card {
+		max-width: 14rem;
+		margin-bottom: var(--size-28)
+	}
+	
+	.why-banner {
+		width: 28.75rem;
+		height: 16.45rem;
+		margin-top: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 950px) {
+
+	.why-banner {
+		width: 43.75rem;
+		height: 24.8rem;
+		margin-top: 2.5rem;
+	}
+}
+
+
+@media screen and (min-width: 769px) {
+	.hero-wrapper {
+		margin-top: var(--size-50);
+	}
+	
+	h1.hero-header {
+		font-size: var(--size-40);
+	}
+	.header-container {
+		display: flex;
+	}
+	.logos-wrapper {
+		margin-top: var(--size-30);
+		height: 25rem;
+		width: 25rem;
+	}
+	
+	.asana {
+		right: 0.313rem;
+		top: var(--size-30);
+	}
+	.atlassian {
+		left: 40%;
+		top: 4.625rem;
+	}
+	.calendar {
+		display: flex;
+		right: 0;
+		bottom: var(--size-30);
+	}
+	.google {
+		left: 4.063rem;
+		top: var(--size-6);
+	}
+	.google-ads {
+		display: flex;
+		left: 30%;
+		bottom: 4.75rem;
+	}
+	.paypal {
+		left: var(--size-40);
+		bottom: 8.75rem;
+	}
+	.weave {
+		right: 6.063rem;
+		bottom: 7.5rem;
+	}
+	
+	.benefits {
+		margin-top: var(--size-100);
+	}
+	
+	.benefits-intro {
+		margin-bottom: var(--size-50);
+	}
+	
+	.benefits-intro h2 {
+		font-size: 2rem;
+		margin-bottom: var(--size-10);
+	}
+	
+	.perspective {
+		height: var(--size-300);
+		display: flex;
+	}
+	
+	.perspective-info {
+		width: 30%;
+		margin-top: var(--size-28);
+	}
+	
+	.perspective-img-container {
+		position: relative;
+		width: 70%
+	}
+	
+	.perspective img {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+	}
+	
+	.why-intro {
+		margin-bottom: var(--size-60);
+	}
+	
+	.why-intro h2, .pricing-intro h2 {
+		font-size: 2rem;
+		margin-bottom: var(--size-10);
+	}
+
+	.bullet-points {
+/*		width: 100%;*/
+		max-width: 43.75rem;
+		grid-template: repeat(2, auto) / var(--size-16) 4.25rem repeat(2, auto) 4.25rem repeat(2, auto) 4.25rem repeat(2, auto) 4.25rem var(--size-16);
+		justify-items: center;
+	}
+	
+	.big-bullet {
+		grid-row: 1/2;
+	}
+	
+	.bullet-points p {
+		margin: 1rem 0;
+		text-align: center;
+		grid-row: 2/3;
+	}
+	
+	.divider {
+		width: 8.125rem;
+		height: 0.125rem;
+		margin: var(--size-16) 0;
+		grid-row: 1/2;
+	}
+	
+	div.divider.basic {
+		grid-column: 3/5;
+	}
+	div.divider.component {
+		grid-column: 6/8;
+	}
+	div.divider.combined {
+		grid-column: 9/11;
+	}
+	
+	div.big-bullet.basic {
+		grid-column: 2/3;
+	}
+	div.big-bullet.component {
+		grid-column: 5/6;
+	}
+	div.big-bullet.combined {
+		grid-column: 8/9;
+	}
+	div.big-bullet.layouts {
+		grid-column: 11/12;
+	}
+	
+	p.basic {
+		grid-column: 1/4;
+		justify-self: start;
+	}
+	p.component {
+		grid-column: 4/7;
+	}
+	p.combined {
+		grid-column: 7/10;
+	}
+	p.layouts {
+		grid-column: 10/13;
+		justify-self: end;
+	}
+
+	.why-play {
+		height: var(--size-50);
+		width: var(--size-50);
+		border-radius: 50%;
+		box-shadow: rgba(149, 157, 165, 0.2) 0rem var(--size-8) 1.5rem;
+	}
+
+	.why {
+		margin: var(--size-150) auto var(--size-100);
+	}
+	
+	.user-image-container {
+		grid-template: 8rem auto var(--size-50) / var(--size-40) auto;
+	}
+	
+	.image-decor {
+		grid-row: 2/4;
+		height: 17.5rem;
+	}
+	
+	.user-image {
+		grid-row: 1/3;
+		grid-column: 2/3;
+	}
+	
+	.testimonial {
+		max-width: 43.75rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.testimonial-text {
+		margin-left: 2.5rem;
+	}
+	
+	p.testimonial-quote {
+		max-width: 33ch;
+		line-height: 1.7;
+	}
+	
+	.best {
+		max-width: 43.75rem;
+	}
+
+	.best h4 {
+		margin-bottom: 2rem;
+	}
+	
+	.logo.uber, .logo.weebly {
+		display: inline-block;
+	}
+	
+	.pricing {
+		max-width: 100%;
+	}
+	
+	.pricing-cards-container {
+		width: 100%;
+		display: flex;
+	}
+	
+	.pricing-card-secondary {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 27.5rem;
+		padding-bottom: 1rem;
+		padding-right: 0;
+	}
+	
+	.pricing-card-secondary:last-child, .pricing-card-secondary:nth-child(3) {
+		margin-bottom: 0.125rem;
+	}
+	
+	.inner-pricing-card {
+		max-width: 11.25rem;
+		margin-bottom: var(--size-8);
+	}
+	
+	.hire {
+		padding: 2rem 0;
+	}
+	
+	.hire-content-container {
+		display: flex;
+		max-width: 50rem;
+		margin: 0 auto;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	
+	.hire-text {
+		padding-right: 0.6rem;
+		padding-top: 0;
+	}
+	
+	.hire-form {
+		max-width: 22rem;
+		justify-content: space-between;
+		padding: 1.5rem 1.5rem;
+	}
+	
+	.input-holder {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	.hire-form input, .hire-form select {
+		width: 47%;
+		margin-bottom: 1.25rem;
+	}
+	
+	.footer-inner {
+		max-width: 44rem;
+	}
+	
+	.footer-company-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+	
+	.bottom-nav-categories {
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.logos-wrapper {
+		margin-left: var(--size-100);
+		width: 31.25rem;
+	}
+	
+	.perspective {
+		height: 21.875rem;
+		padding: var(--size-70) 0 0 0;
+	}
+	
+	.perspective-info {
+		width: 25%;
+	}
+	
+	.perspective-img-container {
+		position: relative;
+		width: 75%
+	}
+	
+	.why-banner {
+		width: 52rem;
+		height: 29.75rem;
+		margin-top: 2.5rem;
+	}
+	
+	.testimonial {
+		max-width: 50rem;
+	}
+	
+	.testimonial-text {
+		margin-left: 3.5rem;
+	}
+	
+	.best, .footer-inner {
+		max-width: 50rem;
+	}
+	
+	.pricing {
+		max-width: 56.25rem;
+		margin: var(--size-150) auto var(--size-100);
+	}
+	
+	.pricing-card-main {
+		max-width: var(--size-330);
+	}
+	
+	.pricing-card-secondary {
+		justify-content: space-around;
+		max-width: 34.375rem;
+	}
+	
+	.inner-pricing-card {
+		max-width: 12.5rem;
+		margin-bottom: var(--size-8);
+	}
+	
+	.hire-form {
+		max-width: 26rem;
+		justify-content: space-between;
+		padding: 1.5rem 3rem;
+	}
+	
+	.footer-inner {
+		flex-direction: row;
+	}
+	
+	.bottom-nav-categories {
+		width: 70%;
+		margin-left: 3rem;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	
+	.footer-company-info {
+		align-items: flex-start;
+	}
+	
+	footer h4 {
+		font-size: 0.95rem;
+		margin: 0 0 var(--size-10);
+	}
+	
+	footer a {
+		font-size: 0.85rem;
+		margin-bottom: var(--size-10);
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+  .nav-link a {
+		font-size: var(--size-14);
+	}
+	
+	.benefits-card-container {
+		max-width: 71.25rem;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	
+	.perspective img {
+		max-width: 37.5rem;
+	}
+	
+	.perspective-info {
+		padding-left: 5rem;
+	}
+	
+	.hire-content-container {
+		max-width: 56.25rem;
+	}
+	
+	.footer-inner	{
+		max-width: 56.25rem;
+	}
+}
